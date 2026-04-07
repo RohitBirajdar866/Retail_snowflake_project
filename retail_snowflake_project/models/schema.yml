@@ -1,0 +1,24 @@
+version: 2
+
+models:
+
+  - name: mart_customers
+    description: Final customer table for reporting
+
+    columns:
+
+      - name: customer_id
+        description: Unique customer id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description: Customer name
+        tests:
+          - not_null
+
+      - name: city
+        description: Customer city
+        tests:
+          - not_null
